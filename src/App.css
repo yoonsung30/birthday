@@ -1,0 +1,42 @@
+/* 기본 초기화 */
+* {
+  box-sizing: border-box;
+  color: #333333;
+  
+}
+h1, h2, h3 {
+  color: #090909; /* 원하는 색상 코드로 변경하세요 (예: 예쁜 핑크/레드) */
+  margin-top: 0;
+}
+body {
+  background-color: #222; /* PC 화면에서 주변을 어둡게 해주는 배경 */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Pretendard', sans-serif;
+}
+
+/* 스마트폰 목업(Frame) 효과 */
+.mobile-container {
+  width: 100%;
+  max-width: 412px;
+  height: 100vh;
+  max-height: 844px;
+  background-color: #fff0f5; /* 핑크빛 모바일 화면 배경 */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+@media (min-width: 480px) {
+  .mobile-container {
+    height: 844px; /* PC에서는 예쁜 핸드폰 모양으로 뜸 */
+    border: 10px solid #333;
+  }
+}
