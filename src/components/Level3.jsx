@@ -32,7 +32,7 @@ export default function Level3({ onNext }) {
 
   return (
     <div style={styles.container}>
-      <h2>하나만 찾아야해</h2>
+      <h2>하나만 찾아야해ㅋ</h2>
       <p style={styles.subText}>{message}</p>
       
       {/* 60개(6열 x 10행) 빽빽한 보물상자 판 */}
