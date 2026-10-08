@@ -10,18 +10,18 @@ export default function Level3({ onNext }) {
 
   const handleBoxClick = (index) => {
     if (index === realIndex) {
-      alert("대박! 60개를 다 뒤져서 진짜를 찾아내다니... 인정! 마지막 편지로 이동합니다 💌");
+      alert("잘해써");
       onNext();
     } else {
       const nextFailCount = failCount + 1;
 
       // 킹받는 메시지 (초기화 없이 편하게 계속 도전 가능!)
       const fakeMessages = [
-        `여긴 텅 비었지롱~ 😜 (틀린 횟수: ${nextFailCount}번)`,
-        `틀렸어! 59개 중에 하나 더 있어 ㅋㅋㅋ (틀린 횟수: ${nextFailCount}번)`,
-        `눈 감고 누르나? 거긴 아니야 (틀린 횟수: ${nextFailCount}번)`,
-        `설마 여긴 줄 알았어? 오답! 🔥 (틀린 횟수: ${nextFailCount}번)`,
-        `아이고 아까워라~ 조심해라 진짜 (틀린 횟수: ${nextFailCount}번)`,
+        `땡 (틀린 횟수: ${nextFailCount}번)`,
+        `틀려써 (틀린 횟수: ${nextFailCount}번)`,
+        `응 아늬야 (틀린 횟수: ${nextFailCount}번)`,
+        `땡떙땡 (틀린 횟수: ${nextFailCount}번)`,
+        `떙떙떙떙떙떙(틀린 횟수: ${nextFailCount}번)`,
       ];
       const randomMsg = fakeMessages[Math.floor(Math.random() * fakeMessages.length)];
       
@@ -32,7 +32,7 @@ export default function Level3({ onNext }) {
 
   return (
     <div style={styles.container}>
-      <h2>🎁 Level 3. 지옥의 60개 보물찾기</h2>
+      <h2>하나만 찾아야해</h2>
       <p style={styles.subText}>{message}</p>
       
       {/* 60개(6열 x 10행) 빽빽한 보물상자 판 */}

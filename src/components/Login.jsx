@@ -15,7 +15,7 @@ export default function Login({ onNext }) {
     
     // 공백 제거 및 형식 맞춤 비교
     if (name.trim() === correctName && phone.trim() === correctPhone && puppyname.trim() === puppy) {
-      alert("본인 확인 완료! 🎉 생일 주인공 입장하십니다~");
+      alert("계속 맞쵸바");
       onNext(); // Level 1로 이동!
     } else {
       alert("누구세요?");

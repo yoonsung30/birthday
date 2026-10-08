@@ -16,7 +16,7 @@ export default function Level1({ onNext, onReset }) {
 
       if (nextFailCount >= 2) {
         // 2번 이상 틀렸을 때 처음 화면(로그인)으로 강제 소환!
-        alert("처음부터 다시해보쟈~");
+        alert("다시~");
         
         // App.jsx에서 넘겨준 초기화 함수가 있다면 실행 (없다면 페이지 새로고침이나 step 0으로 점프)
         if (onReset) {
@@ -34,8 +34,8 @@ export default function Level1({ onNext, onReset }) {
 
   return (
     <div style={styles.container}>
-      <h2>🔒 Level 1. 기억력 테스트</h2>
-      <p>우리가 처음 만난 날은 언제일까요?</p>
+      <h2>우리 처음 만난 날은 언제일까여?</h2>
+      <p>엣헴</p>
       
       {["2026년 7월 25일","2026년 7월 26일","2026년 7월 27일","2026년 7월 28일","2026년 7월 29일","2026년 7월 30일","2026년 7월 31일","2026년 8월 1일","2026년 8월 2일"].map((date, idx) => (
         <button key={idx} style={styles.btn} onClick={() => handleSelect(date)}>

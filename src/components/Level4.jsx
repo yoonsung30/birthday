@@ -17,7 +17,7 @@ export default function Level4() {
 
   return (
     <div style={styles.container}>
-      <h2>💌 서프라이즈 편지</h2>
+      <h2>❤️생일축하해❤️</h2>
       <div style={styles.letterBox}>
         <pre style={styles.letterText}>{text}</pre>
       </div>
